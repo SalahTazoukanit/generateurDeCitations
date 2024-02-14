@@ -64,27 +64,27 @@
 // EXO CITATIONS AVEC 3 MORCEAUX DE PHRASES (bonus)
 
 
-// let citationEnsemble = [[" on peut", " tu peux", " les gens doivent"],[" vivre ensemble"," jouer"," marquer"],[" l'histoire"," toujours"," dans la planette"]]; 
-// const button = document.querySelector("#button");
-// button.addEventListener("click", function Generateur(){
+let citationEnsemble = [[" on peut", " tu peux", " les gens doivent"],[" vivre ensemble"," jouer"," marquer"],[" l'histoire"," toujours"," dans la planette"]]; 
+const button = document.querySelector("#button");
+button.addEventListener("click", function Generateur(){
 
-//         //per far si che all'inizio il paragrafo sia vuoto e che a ogni riavviamento si rilanci da zero;
+        //per far si che all'inizio il paragrafo sia vuoto e che a ogni riavviamento si rilanci da zero;
 
-//        let allPar = document.querySelectorAll("p");
-//         allPar.forEach((par) => {
+       let allPar = document.querySelectorAll("p");
+        allPar.forEach((par) => {
 
-//                  par.innerText = "";
-//         });
+                 par.innerText = "";
+        });
 
-//     const input = document.querySelector("#inputNombreCit").value;
-//     for(let i = 0; i < input ; i++){
+    const input = document.querySelector("#inputNombreCit").value;
+    for(let i = 0; i < input ; i++){
         
-//         newPar = document.createElement("p");
-//         newPar.innerText = citationEnsemble[0][ Math.floor(Math.random()*citationEnsemble.length)] + citationEnsemble[1][ Math.floor(Math.random()*citationEnsemble.length)]  + citationEnsemble[2][ Math.floor(Math.random()*citationEnsemble.length)] ;
-//         document.body.appendChild(newPar); 
+        newPar = document.createElement("p");
+        newPar.innerText = citationEnsemble[0][ Math.floor(Math.random()*citationEnsemble.length)] + citationEnsemble[1][ Math.floor(Math.random()*citationEnsemble.length)]  + citationEnsemble[2][ Math.floor(Math.random()*citationEnsemble.length)] ;
+        document.body.appendChild(newPar); 
         
-//     }
-// } );
+    }
+} );
 
 
 
