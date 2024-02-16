@@ -68,22 +68,21 @@ let citationEnsemble = [[" on peut", " tu peux", " les gens doivent"],[" vivre e
 const button = document.querySelector("#button");
 button.addEventListener("click", function Generateur(){
 
-        //per far si che all'inizio il paragrafo sia vuoto e che a ogni riavviamento si rilanci da zero;
-
-       let allPar = document.querySelectorAll("p");
+        //pour que à chaque click on repart à zero avec un paragraph vide.
+        let allPar = document.querySelectorAll("p");
         allPar.forEach((par) => {
-
-                 par.innerText = "";
+             par.innerText = "";
         });
 
     const input = document.querySelector("#inputNombreCit").value;
-    for(let i = 0; i < input ; i++){
-        
-        newPar = document.createElement("p");
-        newPar.innerText = citationEnsemble[0][ Math.floor(Math.random()*citationEnsemble.length)] + citationEnsemble[1][ Math.floor(Math.random()*citationEnsemble.length)]  + citationEnsemble[2][ Math.floor(Math.random()*citationEnsemble.length)] ;
-        document.body.appendChild(newPar); 
-        
-    }
+        for(let i = 0; i < input ; i++){
+            
+                newPar = document.createElement("p");
+                newPar.setAttribute("class", "newPar");
+                newPar.innerText = citationEnsemble[0][ Math.floor(Math.random()*citationEnsemble.length)] + citationEnsemble[1][ Math.floor(Math.random()*citationEnsemble.length)]  + citationEnsemble[2][ Math.floor(Math.random()*citationEnsemble.length)] ;
+                document.body.appendChild(newPar); 
+            
+    };
 } );
 
 
