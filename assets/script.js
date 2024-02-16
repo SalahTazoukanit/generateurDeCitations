@@ -75,14 +75,17 @@ button.addEventListener("click", function Generateur(){
         });
 
     const input = document.querySelector("#inputNombreCit").value;
+    if(Number(input)){
         for(let i = 0; i < input ; i++){
             
                 newPar = document.createElement("p");
                 newPar.setAttribute("class", "newPar");
                 newPar.innerText = citationEnsemble[0][ Math.floor(Math.random()*citationEnsemble.length)] + citationEnsemble[1][ Math.floor(Math.random()*citationEnsemble.length)]  + citationEnsemble[2][ Math.floor(Math.random()*citationEnsemble.length)] ;
                 document.body.appendChild(newPar); 
-            
-    };
+        }
+        }else{
+            alert("Vous n'avez pas inserer un nombre");
+    }
 } );
 
 
